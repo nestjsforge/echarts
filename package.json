@@ -1,0 +1,75 @@
+{
+  "name": "@nestjsforge/echarts",
+  "version": "1.0.1",
+  "description": "Apache ECharts integration for NestJS",
+  "license": "MIT",
+  "author": "NestJSForge",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nestjsforge/echarts.git"
+  },
+  "homepage": "https://github.com/nestjsforge/echarts#readme",
+  "bugs": {
+    "url": "https://github.com/nestjsforge/echarts/issues"
+  },
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage",
+    "test:e2e": "jest --config ./test/jest-e2e.json",
+    "prepack": "npm run build"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "nestjs",
+    "echarts",
+    "apache-echarts",
+    "puppeteer",
+    "chart",
+    "render",
+    "server-side",
+    "png",
+    "visualization",
+    "nestjsforge"
+  ],
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "files": [
+    "**/*.js",
+    "**/*.js.map",
+    "**/*.d.ts",
+    "**/*.d.ts.map"
+  ],
+  "dependencies": {
+    "echarts": "^6.1.0",
+    "puppeteer": "^25.1.0"
+  },
+  "peerDependencies": {
+    "@nestjs/common": ">=10.0.0",
+    "@nestjs/core": ">=10.0.0",
+    "reflect-metadata": ">=0.1.13",
+    "rxjs": ">=7.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^11.0.23",
+    "@nestjs/common": "^11.1.27",
+    "@nestjs/core": "^11.1.27",
+    "@nestjs/testing": "^11.1.27",
+    "@swc/core": "^1.15.41",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^25.9.3",
+    "jest": "^30.4.2",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2",
+    "ts-jest": "^29.4.11",
+    "tsup": "^8.5.1",
+    "typescript": "^6.0.3"
+  }
+}
