@@ -1,6 +1,6 @@
 {
   "name": "@nestjsforge/echarts",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Apache ECharts integration for NestJS",
   "license": "MIT",
   "author": "NestJSForge",
